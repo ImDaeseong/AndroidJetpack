@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Column_test</string>
+    <string name="title_activity_column1">Column1Activity</string>
+    <string name="title_activity_column2">Column2Activity</string>
+    <string name="title_activity_column3">Column3Activity</string>
+    <string name="title_activity_column4">Column4Activity</string>
+    <string name="title_activity_column5">Column5Activity</string>
+</resources>
