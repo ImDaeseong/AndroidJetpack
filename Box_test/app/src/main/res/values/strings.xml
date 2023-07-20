@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Box_test</string>
+    <string name="title_activity_box1">Box1Activity</string>
+    <string name="title_activity_box2">Box2Activity</string>
+</resources>
