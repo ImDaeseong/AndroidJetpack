@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Switch_test</string>
+    <string name="title_activity_switch1">Switch1Activity</string>
+    <string name="title_activity_switch2">Switch2Activity</string>
+</resources>
