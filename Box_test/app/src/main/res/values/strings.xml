@@ -2,4 +2,7 @@
     <string name="app_name">Box_test</string>
     <string name="title_activity_box1">Box1Activity</string>
     <string name="title_activity_box2">Box2Activity</string>
+    <string name="title_activity_box3">Box3Activity</string>
+    <string name="title_activity_box4">Box4Activity</string>
+    <string name="title_activity_box5">Box5Activity</string>
 </resources>

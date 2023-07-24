@@ -10,49 +10,40 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Box_test"
+        android:theme="@style/Theme.ConstraintLayout_test"
         tools:targetApi="31">
         <activity
-            android:name=".Box5Activity"
+            android:name=".CST1Activity"
             android:exported="false"
-            android:label="@string/title_activity_box5"
-            android:theme="@style/Theme.Box_test">
+            android:label="@string/title_activity_cst1"
+            android:theme="@style/Theme.ConstraintLayout_test">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Box4Activity"
+            android:name=".layoutcst1Activity"
             android:exported="false"
-            android:label="@string/title_activity_box4"
-            android:theme="@style/Theme.Box_test">
+            android:label="@string/title_activity_layoutcst1"
+            android:theme="@style/Theme.ConstraintLayout_test">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Box3Activity"
+            android:name=".cstlayout1Activity"
             android:exported="false"
-            android:label="@string/title_activity_box3"
-            android:theme="@style/Theme.Box_test">
+            android:label="@string/title_activity_cstlayout1"
+            android:theme="@style/Theme.ConstraintLayout_test">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Box2Activity"
+            android:name=".constraintlayout1Activity"
             android:exported="false"
-            android:label="@string/title_activity_box2"
-            android:theme="@style/Theme.Box_test">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Box1Activity"
-            android:exported="false"
-            android:label="@string/title_activity_box1"
-            android:theme="@style/Theme.Box_test">
+            android:label="@string/title_activity_constraintlayout1"
+            android:theme="@style/Theme.ConstraintLayout_test">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -61,7 +52,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Box_test">
+            android:theme="@style/Theme.ConstraintLayout_test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

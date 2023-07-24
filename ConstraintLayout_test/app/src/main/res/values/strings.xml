@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ConstraintLayout_test</string>
+    <string name="title_activity_constraintlayout1">constraintlayout1Activity</string>
+    <string name="title_activity_cstlayout1">cstlayout1Activity</string>
+    <string name="title_activity_layoutcst1">layoutcst1Activity</string>
+    <string name="title_activity_cst1">CST1Activity</string>
+</resources>
