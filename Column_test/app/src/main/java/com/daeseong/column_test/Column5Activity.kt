@@ -1,6 +1,7 @@
 package com.daeseong.column_test
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.*
@@ -10,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -27,6 +29,8 @@ class Column5Activity : ComponentActivity() {
 @Composable
 fun Test5() {
 
+    val context = LocalContext.current
+
     val scrollState = rememberScrollState()
     Column(
         modifier = Modifier
@@ -41,7 +45,13 @@ fun Test5() {
             .background(Color.White)
             .border(BorderStroke(1.dp, Color.Red))
             .padding(10.dp)
-            .fillMaxWidth())
+            .fillMaxWidth()
+            .clickable {
+
+                Toast
+                    .makeText(context, "Column1", Toast.LENGTH_SHORT)
+                    .show()
+            } )
         {
             Text(
                 modifier = Modifier

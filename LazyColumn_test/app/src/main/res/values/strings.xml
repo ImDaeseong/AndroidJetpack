@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LazyColumn_test</string>
+    <string name="title_activity_column1">Column1Activity</string>
+    <string name="title_activity_column2">Column2Activity</string>
+</resources>

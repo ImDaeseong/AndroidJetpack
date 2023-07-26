@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LazyRow_test</string>
+    <string name="title_activity_row1">Row1Activity</string>
+</resources>
