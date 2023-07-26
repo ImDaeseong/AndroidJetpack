@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AlertDialog_test</string>
+    <string name="title_activity_alert_dialog1">AlertDialog1Activity</string>
+</resources>
