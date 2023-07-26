@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DropdownMenu_test</string>
     <string name="title_activity_dropdown_menu1">DropdownMenu1Activity</string>
+    <string name="title_activity_dropdown_menu2">DropdownMenu2Activity</string>
 </resources>

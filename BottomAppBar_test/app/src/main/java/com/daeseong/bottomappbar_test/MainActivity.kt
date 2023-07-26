@@ -1,4 +1,4 @@
-package com.daeseong.dropdownmenu_test
+package com.daeseong.bottomappbar_test
 
 import android.content.Intent
 import android.os.Bundle
@@ -18,13 +18,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.daeseong.dropdownmenu_test.ui.theme.DropdownMenu_testTheme
+import com.daeseong.bottomappbar_test.ui.theme.BottomAppBar_testTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            DropdownMenu_testTheme {
+            BottomAppBar_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
@@ -48,7 +48,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, DropdownMenu1Activity::class.java)
+                val intent = Intent(context, BottomAppBar1Activity::class.java)
                 context.startActivity(intent)
             } ,
             modifier = Modifier.padding(10.dp) )
@@ -58,7 +58,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, DropdownMenu2Activity::class.java)
+                val intent = Intent(context, BottomAppBar2Activity::class.java)
                 context.startActivity(intent)
             } ,
             modifier = Modifier.padding(10.dp) )
@@ -68,7 +68,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, DropdownMenu1Activity::class.java)
+                val intent = Intent(context, BottomAppBar1Activity::class.java)
                 context.startActivity(intent)
             } ,
             modifier = Modifier.padding(10.dp) )
@@ -78,7 +78,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, DropdownMenu1Activity::class.java)
+                val intent = Intent(context, BottomAppBar1Activity::class.java)
                 context.startActivity(intent)
             } ,
             modifier = Modifier.padding(10.dp) )
@@ -88,7 +88,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, DropdownMenu1Activity::class.java)
+                val intent = Intent(context, BottomAppBar1Activity::class.java)
                 context.startActivity(intent)
             } ,
             modifier = Modifier.padding(10.dp) )
@@ -101,7 +101,7 @@ fun Buttons() {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    DropdownMenu_testTheme {
+    BottomAppBar_testTheme {
         Buttons()
     }
 }

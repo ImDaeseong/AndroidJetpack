@@ -10,22 +10,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DropdownMenu_test"
+        android:theme="@style/Theme.BottomAppBar_test"
         tools:targetApi="31">
         <activity
-            android:name=".DropdownMenu2Activity"
+            android:name=".BottomAppBar2Activity"
             android:exported="false"
-            android:label="@string/title_activity_dropdown_menu2"
-            android:theme="@style/Theme.DropdownMenu_test">
+            android:label="@string/title_activity_bottom_app_bar2"
+            android:theme="@style/Theme.BottomAppBar_test">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DropdownMenu1Activity"
+            android:name=".BottomAppBar1Activity"
             android:exported="false"
-            android:label="@string/title_activity_dropdown_menu1"
-            android:theme="@style/Theme.DropdownMenu_test">
+            android:label="@string/title_activity_bottom_app_bar1"
+            android:theme="@style/Theme.BottomAppBar_test">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -34,7 +34,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.DropdownMenu_test">
+            android:theme="@style/Theme.BottomAppBar_test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
