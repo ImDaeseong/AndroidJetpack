@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calendar_test</string>
+    <string name="title_activity_calendar1">Calendar1Activity</string>
+    <string name="title_activity_calendar2">Calendar2Activity</string>
+</resources>

@@ -49,8 +49,7 @@ fun CardUI5()  {
 
     Card(modifier = Modifier.padding(10.dp),
         elevation = 10.dp,
-        shape = RoundedCornerShape(20.dp)
-    )
+        shape = RoundedCornerShape(20.dp))
     {
         Box(modifier = Modifier.height(200.dp))
         {
@@ -65,8 +64,7 @@ fun CardUI6()  {
 
     Card(modifier = Modifier.padding(10.dp),
         elevation = 10.dp,
-        shape = RoundedCornerShape(20.dp)
-    )
+        shape = RoundedCornerShape(20.dp))
     {
         Box(modifier = Modifier.height(200.dp)) {
 
@@ -88,8 +86,7 @@ fun CardUI6()  {
             Box(modifier = Modifier
                 .fillMaxSize()
                 .padding(10.dp),
-                contentAlignment = Alignment.BottomCenter
-            )
+                contentAlignment = Alignment.BottomCenter)
             {
                 Text(text = "test", color = Color.White)
             }

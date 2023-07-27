@@ -64,7 +64,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, TextField1Activity::class.java)
+                val intent = Intent(context, TextField2Activity::class.java)
                 context.startActivity(intent)
             } ,
             modifier = Modifier.padding(10.dp) )

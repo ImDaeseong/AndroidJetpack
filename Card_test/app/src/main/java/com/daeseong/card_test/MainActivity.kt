@@ -72,7 +72,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, Card1Activity::class.java)
+                val intent = Intent(context, Card4Activity::class.java)
                 context.startActivity(intent)
             } ,
             modifier = Modifier.padding(10.dp) )

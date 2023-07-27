@@ -3,4 +3,5 @@
     <string name="title_activity_card1">Card1Activity</string>
     <string name="title_activity_card2">Card2Activity</string>
     <string name="title_activity_card3">Card3Activity</string>
+    <string name="title_activity_card4">Card4Activity</string>
 </resources>
