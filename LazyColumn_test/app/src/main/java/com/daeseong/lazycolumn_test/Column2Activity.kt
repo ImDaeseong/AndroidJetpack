@@ -98,7 +98,6 @@ fun itemUI2(values : Int){
     }
 }
 
-
 @Composable
 fun itemUI3(values : Int){
 
@@ -153,7 +152,6 @@ fun Test2() {
             itemUI3(4)
         }
     }
-
 }
 
 @Preview(showBackground = true)

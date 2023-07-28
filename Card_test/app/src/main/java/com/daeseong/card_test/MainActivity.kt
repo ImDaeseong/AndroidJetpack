@@ -35,11 +35,10 @@ fun Buttons() {
     val context = LocalContext.current
 
     Column (
-        modifier = Modifier.fillMaxSize(), //전체 영역
+        modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
-
         Button (
             onClick = {
                 val intent = Intent(context, Card1Activity::class.java)

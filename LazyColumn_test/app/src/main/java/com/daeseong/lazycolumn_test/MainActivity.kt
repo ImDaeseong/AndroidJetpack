@@ -48,7 +48,7 @@ fun Buttons() {
     val context = LocalContext.current
 
     Column (
-        modifier = Modifier.fillMaxSize(), //전체 영역
+        modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
@@ -75,7 +75,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, Column1Activity::class.java)
+                val intent = Intent(context, Column3Activity::class.java)
                 context.startActivity(intent)
             } ,
             modifier = Modifier.padding(10.dp) )

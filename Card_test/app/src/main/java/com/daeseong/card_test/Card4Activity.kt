@@ -40,6 +40,7 @@ class Card4Activity : ComponentActivity() {
     }
 }
 
+@Preview
 @Composable
 fun CardBorderUI1() {
 
@@ -56,6 +57,7 @@ fun CardBorderUI1() {
     }
 }
 
+@Preview
 @Composable
 fun CardBorderUI2() {
 
@@ -73,6 +75,7 @@ fun CardBorderUI2() {
     }
 }
 
+@Preview
 @Composable
 fun CardBorderUI3() {
 
@@ -91,6 +94,7 @@ fun CardBorderUI3() {
     }
 }
 
+@Preview
 @Composable
 fun CardBorderUI4() {
 
@@ -123,6 +127,7 @@ fun CardBorderUI4() {
     }
 }
 
+@Preview
 @Composable
 fun CardBorderUI5() {
 

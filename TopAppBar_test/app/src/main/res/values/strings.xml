@@ -4,4 +4,5 @@
     <string name="title_activity_top_app_bar2">TopAppBar2Activity</string>
     <string name="title_activity_top_app_bar3">TopAppBar3Activity</string>
     <string name="title_activity_top_app_bar4">TopAppBar4Activity</string>
+    <string name="title_activity_top_app_bar5">TopAppBar5Activity</string>
 </resources>

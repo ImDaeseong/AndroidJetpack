@@ -86,11 +86,8 @@ fun Test3() {
                     append("append3")
                 }
             )
-
         }
-
     }
-
 }
 
 @Preview(showBackground = true)

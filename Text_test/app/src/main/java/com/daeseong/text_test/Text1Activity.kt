@@ -1,8 +1,10 @@
 package com.daeseong.text_test
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -47,6 +50,8 @@ class Text1Activity : ComponentActivity() {
 @Composable
 fun setTitle(title : String){
 
+    val context = LocalContext.current
+
     Text(text = title,
         style = TextStyle(
             color = Color.Black,
@@ -55,12 +60,17 @@ fun setTitle(title : String){
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
             textDecoration = TextDecoration.Underline
-        )
+        ),
+        modifier = Modifier
+            .clickable(
+                onClick = {
+                    Toast.makeText(context, "click", Toast.LENGTH_SHORT).show()
+                })
     )
 }
 
 @Composable
-fun  Test1() {
+fun Test1() {
 
     setTitle("제목 1")
 

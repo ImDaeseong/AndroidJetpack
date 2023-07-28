@@ -42,6 +42,7 @@ class TextField1Activity : ComponentActivity() {
     }
 }
 
+@Preview
 @Composable
 fun TextField1()  {
 
@@ -76,6 +77,7 @@ fun TextField1()  {
     )
 }
 
+@Preview
 @Composable
 fun TextField2()  {
 
@@ -105,6 +107,7 @@ fun TextField2()  {
     )
 }
 
+@Preview
 @Composable
 fun TextField3()  {
 
@@ -135,6 +138,7 @@ fun TextField3()  {
     )
 }
 
+@Preview
 @Composable
 fun TextField4()  {
 

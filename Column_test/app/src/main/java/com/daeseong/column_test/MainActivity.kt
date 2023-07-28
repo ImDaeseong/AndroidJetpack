@@ -32,7 +32,7 @@ fun Buttons() {
     val context = LocalContext.current
 
     Column (
-        modifier = Modifier.fillMaxSize(), //전체 영역
+        modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
@@ -85,9 +85,7 @@ fun Buttons() {
         {
             Text(text = "button5")
         }
-
     }
-
 }
 
 @Preview(showBackground = true)

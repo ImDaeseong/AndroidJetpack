@@ -5,4 +5,6 @@
     <string name="title_activity_box3">Box3Activity</string>
     <string name="title_activity_box4">Box4Activity</string>
     <string name="title_activity_box5">Box5Activity</string>
+    <string name="title_activity_box6">Box6Activity</string>
+    <string name="title_activity_box7">Box7Activity</string>
 </resources>

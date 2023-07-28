@@ -44,6 +44,7 @@ class Card2Activity : ComponentActivity() {
     }
 }
 
+@Preview
 @Composable
 fun CardUI5()  {
 
@@ -59,6 +60,7 @@ fun CardUI5()  {
     }
 }
 
+@Preview
 @Composable
 fun CardUI6()  {
 

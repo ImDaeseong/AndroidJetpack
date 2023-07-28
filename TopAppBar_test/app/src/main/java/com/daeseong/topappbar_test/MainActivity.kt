@@ -47,11 +47,10 @@ fun Buttons() {
     val context = LocalContext.current
 
     Column (
-        modifier = Modifier.fillMaxSize(), //전체 영역
+        modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
-
         Button (
             onClick = {
                 val intent = Intent(context, TopAppBar1Activity::class.java)
@@ -94,7 +93,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, TopAppBar1Activity::class.java)
+                val intent = Intent(context, TopAppBar5Activity::class.java)
                 context.startActivity(intent)
             } ,
             modifier = Modifier.padding(10.dp) )

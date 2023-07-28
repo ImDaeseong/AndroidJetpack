@@ -85,6 +85,7 @@ fun setTextColor2(value : String){
     )
 }
 
+@Preview
 @Composable
 fun Test2() {
 

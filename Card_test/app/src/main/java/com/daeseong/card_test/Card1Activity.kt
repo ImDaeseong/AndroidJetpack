@@ -1,9 +1,11 @@
 package com.daeseong.card_test
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
@@ -14,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.daeseong.card_test.ui.theme.Card_testTheme
@@ -40,10 +43,16 @@ class Card1Activity : ComponentActivity() {
     }
 }
 
+@Preview
 @Composable
 fun CardUI1()  {
+
+    val context = LocalContext.current
     
-    Card(modifier = Modifier.padding(10.dp),
+    Card(modifier = Modifier.padding(10.dp)
+        .clickable {
+            Toast.makeText(context, "click", Toast.LENGTH_SHORT).show()
+        },
         elevation = 10.dp,
         contentColor = Color.Red,
         backgroundColor = Color.White)
@@ -52,6 +61,7 @@ fun CardUI1()  {
     }
 }
 
+@Preview
 @Composable
 fun CardUI2()  {
 
@@ -65,6 +75,7 @@ fun CardUI2()  {
     }
 }
 
+@Preview
 @Composable
 fun CardUI3()  {
 
@@ -78,6 +89,7 @@ fun CardUI3()  {
     }
 }
 
+@Preview
 @Composable
 fun CardUI4()  {
 
