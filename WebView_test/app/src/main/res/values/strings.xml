@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WebView_test</string>
+    <string name="title_activity_web_view1">WebView1Activity</string>
+    <string name="title_activity_web_view2">WebView2Activity</string>
+</resources>
