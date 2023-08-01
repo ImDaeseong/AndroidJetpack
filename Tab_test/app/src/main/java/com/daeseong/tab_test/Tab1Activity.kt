@@ -36,11 +36,11 @@ fun Test1() {
 
     val list = listOf("page1", "page2", "page3")
 
+    val pageState = rememberPagerState()
+    val coroutineState = rememberCoroutineScope()
+
     Column(modifier = Modifier.fillMaxSize())
     {
-        val pageState = rememberPagerState()
-        val coroutineState = rememberCoroutineScope()
-
         TabRow(
             backgroundColor = Color.White,
             contentColor = Color.Red,
@@ -57,7 +57,6 @@ fun Test1() {
             })
         {
             list.forEachIndexed { index, s ->
-
                 Tab(
                     text = {
                         Text(
@@ -76,7 +75,6 @@ fun Test1() {
         }
 
         HorizontalPager(count = list.size, state = pageState) { page ->
-
             when(page) {
                 0 -> TabScreen1()
                 1 -> TabScreen2()
