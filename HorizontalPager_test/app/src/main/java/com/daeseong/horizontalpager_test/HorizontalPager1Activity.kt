@@ -19,7 +19,6 @@ import androidx.compose.ui.unit.dp
 import com.daeseong.horizontalpager_test.ui.theme.HorizontalPager_testTheme
 import com.google.accompanist.pager.*
 
-
 class HorizontalPager1Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
