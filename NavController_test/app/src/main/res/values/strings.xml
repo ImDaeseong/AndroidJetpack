@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">NavController_test</string>
     <string name="title_activity_nav_controller1">NavController1Activity</string>
+    <string name="title_activity_nav_controller2">NavController2Activity</string>
 </resources>

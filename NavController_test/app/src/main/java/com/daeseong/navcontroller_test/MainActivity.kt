@@ -66,7 +66,7 @@ fun Buttons()  {
         ButtonEx(context, Intent(context, NavController1Activity::class.java), "button1")
         Divider(modifier = Modifier.padding(start = 10.dp).padding(end = 10.dp), color = Color.Gray)
 
-        ButtonEx(context, Intent(context, NavController1Activity::class.java), "button2")
+        ButtonEx(context, Intent(context, NavController2Activity::class.java), "button2")
         Divider(modifier = Modifier.padding(start = 10.dp).padding(end = 10.dp), color = Color.Gray)
 
         ButtonEx(context, Intent(context, NavController1Activity::class.java), "button3")
