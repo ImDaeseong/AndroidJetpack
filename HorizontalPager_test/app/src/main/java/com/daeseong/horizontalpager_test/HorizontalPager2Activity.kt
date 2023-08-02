@@ -12,6 +12,7 @@ import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -71,36 +72,37 @@ fun Test2() {
             }
         }
 
-        HorizontalPager(
-            modifier = Modifier.height(300.dp).background(Color.LightGray),
-            state = pageState,
-            count = pageCount * 10, //count = pageCount * 1000, // 아이템을 반복하도록 count 설정 => list 개수보다만 크면 무한 반복이 가능
-            itemSpacing = 10.dp,
-            contentPadding = PaddingValues(horizontal = 10.dp, vertical = 10.dp)
-        ) { index ->
+        Column(modifier = Modifier.fillMaxWidth().height(300.dp)) {
+            HorizontalPager(modifier = Modifier.weight(1f).background(Color.LightGray),
+                state = pageState,
+                count = pageCount * 10, //count = pageCount * 1000, // 아이템을 반복하도록 count 설정 => list 개수보다만 크면 무한 반복이 가능
+                itemSpacing = 10.dp,
+                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 10.dp))
+            { index ->
 
-            val page = index % pageCount
-            println(page)
+                val page = index % pageCount
+                println(page)
 
-            Card(modifier = Modifier.fillMaxWidth().padding(10.dp),
-                shape = RoundedCornerShape(10.dp))
-            {
-                Image(
-                    painter = painterResource(id = list[page]),
-                    contentDescription = null,
-                    contentScale = ContentScale.FillBounds
-                )
+                Card(modifier = Modifier.fillMaxWidth().padding(10.dp), shape = RoundedCornerShape(10.dp))
+                {
+                    Image(
+                        painter = painterResource(id = list[page]),
+                        contentDescription = null,
+                        contentScale = ContentScale.FillBounds
+                    )
+                }
             }
-        }
 
-        HorizontalPagerIndicator(
-            pageCount = pageCount,
-            currentPage = calculatePage(pageCount, pageState.currentPage, start),
-            indicatorSpacing = 8.dp,
-            indicatorSize = 12.dp,
-            activeColor = Color.Red,
-            inactiveColor = Color.Gray
-        )
+            HorizontalPagerIndicator(
+                pageCount = pageCount,
+                currentPage = calculatePage(pageCount, pageState.currentPage, start),
+                indicatorSpacing = 8.dp,
+                indicatorSize = 12.dp,
+                activeColor = Color.Red,
+                inactiveColor = Color.Gray,
+                modifier = Modifier.align(Alignment.CenterHorizontally).padding(vertical = 10.dp)
+            )
+        }
     }
 }
 
@@ -116,12 +118,14 @@ fun HorizontalPagerIndicator(
     indicatorSpacing: Dp,
     indicatorSize: Dp,
     activeColor: Color,
-    inactiveColor: Color)
+    inactiveColor: Color,
+    modifier: Modifier = Modifier)
 {
     val density = LocalDensity.current
     val scaledSpacing = with(density) { indicatorSpacing.toPx() }
 
     Layout(
+        modifier = modifier,
         content = {
             repeat(pageCount) { index ->
                 Surface(
