@@ -39,7 +39,6 @@ fun Test5() {
             .fillMaxWidth()
             .verticalScroll(scrollState) )
     {
-
         Column(modifier = Modifier
             .height(200.dp)
             .background(Color.White)
@@ -47,10 +46,7 @@ fun Test5() {
             .padding(10.dp)
             .fillMaxWidth()
             .clickable {
-
-                Toast
-                    .makeText(context, "Column1", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(context, "Column1", Toast.LENGTH_SHORT).show()
             } )
         {
             Text(
@@ -141,8 +137,6 @@ fun Test5() {
             )
         }
     }
-
-
 }
 
 @Preview(showBackground = true)

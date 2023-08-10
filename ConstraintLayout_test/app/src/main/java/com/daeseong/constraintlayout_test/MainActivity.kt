@@ -27,8 +27,8 @@ class MainActivity : ComponentActivity() {
             ConstraintLayout_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.SpaceEvenly,
@@ -51,23 +51,20 @@ fun Buttons()  {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
-
         Button (
             onClick = {
                 val intent = Intent(context, CST1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button1")
         }
 
         Button (
             onClick = {
-                val intent = Intent(context, CST1Activity::class.java)
+                val intent = Intent(context, CST2Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button2")
         }
@@ -76,8 +73,7 @@ fun Buttons()  {
             onClick = {
                 val intent = Intent(context, CST1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button3")
         }
@@ -86,8 +82,7 @@ fun Buttons()  {
             onClick = {
                 val intent = Intent(context, CST1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button4")
         }
@@ -96,8 +91,7 @@ fun Buttons()  {
             onClick = {
                 val intent = Intent(context, CST1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button5")
         }

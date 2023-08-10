@@ -25,7 +25,6 @@ class Column1Activity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Column_testTheme {
-
                 Test1()
             }
         }
@@ -49,9 +48,7 @@ fun Test1() {
         Text(
             modifier = Modifier
                 .clickable {
-                    Toast
-                        .makeText(context, "Text", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(context, "Text", Toast.LENGTH_SHORT).show()
                 }
                 .background(color = Color.Gray)
                 .fillMaxWidth()

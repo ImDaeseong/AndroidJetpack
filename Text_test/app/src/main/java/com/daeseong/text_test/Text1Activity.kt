@@ -32,8 +32,8 @@ class Text1Activity : ComponentActivity() {
             Text_testTheme {
                Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+               {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.Center,
@@ -52,7 +52,8 @@ fun setTitle(title : String){
 
     val context = LocalContext.current
 
-    Text(text = title,
+    Text(
+        text = title,
         style = TextStyle(
             color = Color.Black,
             fontSize = 20.sp,
@@ -71,9 +72,7 @@ fun setTitle(title : String){
 
 @Composable
 fun Test1() {
-
     setTitle("제목 1")
-
 }
 
 @Preview(showBackground = true)

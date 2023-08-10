@@ -26,14 +26,13 @@ class TextField1Activity : ComponentActivity() {
             TextField_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.Top,
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
+                        horizontalAlignment = Alignment.CenterHorizontally)
+                    {
                         Test1()
                     }
                 }

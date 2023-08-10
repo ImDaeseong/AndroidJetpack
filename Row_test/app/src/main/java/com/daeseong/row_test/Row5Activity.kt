@@ -18,8 +18,8 @@ class Row5Activity : ComponentActivity() {
             Row_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Test5()
                 }
             }

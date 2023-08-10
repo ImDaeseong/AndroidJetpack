@@ -28,13 +28,13 @@ class TopAppBar2Activity : ComponentActivity() {
             TopAppBar_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.Top,
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
+                        horizontalAlignment = Alignment.CenterHorizontally)
+                    {
                         Test2()
                     }
                 }
@@ -63,7 +63,6 @@ fun Test2() {
             }
 
             Text(text = "TopAppBar", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.Red)
-
 
             IconButton(
                 onClick = {

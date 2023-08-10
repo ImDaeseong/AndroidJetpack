@@ -27,8 +27,8 @@ class Row3Activity : ComponentActivity() {
             Row_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Test3()
                 }
             }
@@ -45,7 +45,6 @@ fun Test3() {
             .fillMaxHeight(),
         verticalArrangement = Arrangement.SpaceBetween)
     {
-
         val scrollState = rememberScrollState()
 
         Row(
@@ -117,7 +116,6 @@ fun Test3() {
                 .horizontalScroll(scrollState),
             verticalAlignment = Alignment.CenterVertically)
         {
-
             Text(text = "text2")
         }
 
@@ -130,7 +128,6 @@ fun Test3() {
                 .horizontalScroll(scrollState),
             verticalAlignment = Alignment.CenterVertically)
         {
-
             Text(text = "text3")
         }
     }

@@ -53,7 +53,6 @@ fun Buttons() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
-
         Button (
             onClick = {
                 val intent = Intent(context, Box1Activity::class.java)
@@ -122,6 +121,16 @@ fun Buttons() {
             modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button7")
+        }
+
+        Button (
+            onClick = {
+                val intent = Intent(context, Box8Activity::class.java)
+                context.startActivity(intent)
+            } ,
+            modifier = Modifier.padding(10.dp) )
+        {
+            Text(text = "button8")
         }
     }
 }

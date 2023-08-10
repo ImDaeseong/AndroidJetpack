@@ -241,7 +241,6 @@ fun AlertDialog5() {
                     .padding(10.dp),
                     horizontalArrangement = Arrangement.SpaceEvenly)
                 {
-
                     TextButton(onClick = { showDialog.value = false }) {
                         Text(text = "dismissButton")
                     }

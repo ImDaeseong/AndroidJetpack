@@ -43,9 +43,7 @@ fun Test1() {
     var qrText by remember { mutableStateOf("0123456789-qr:코드읽기") }
     var qrBitmap by remember { mutableStateOf<Bitmap?>(null) }
 
-    Column(modifier = Modifier
-        .fillMaxSize()
-        .padding(10.dp), verticalArrangement = Arrangement.spacedBy(10.dp))
+    Column(modifier = Modifier.fillMaxSize().padding(10.dp), verticalArrangement = Arrangement.spacedBy(10.dp))
     {
         OutlinedTextField(
             value = qrText,
@@ -67,9 +65,7 @@ fun Test1() {
             colors = TextFieldDefaults.outlinedTextFieldColors(focusedBorderColor = Color.DarkGray, unfocusedBorderColor = Color.LightGray, disabledBorderColor = Color.LightGray)
         )
 
-        Divider(modifier = Modifier
-            .padding(start = 10.dp)
-            .padding(end = 10.dp), color = Color.Gray)
+        Divider(modifier = Modifier.padding(start = 10.dp).padding(end = 10.dp), color = Color.Gray)
 
         Button(
             onClick = {
@@ -84,14 +80,9 @@ fun Test1() {
 
         Spacer(modifier = Modifier.height(10.dp))
         
-        Column( modifier = Modifier.fillMaxWidth().height(200.dp),
-            horizontalAlignment = Alignment.CenterHorizontally) {
-
-            Box(modifier = Modifier
-                .size(200.dp)
-                .border(1.dp, Color.Black)
-                .padding(10.dp),
-                contentAlignment = Alignment.Center)
+        Column( modifier = Modifier.fillMaxWidth().height(200.dp), horizontalAlignment = Alignment.CenterHorizontally)
+        {
+            Box(modifier = Modifier.size(200.dp).border(1.dp, Color.Black).padding(10.dp), contentAlignment = Alignment.Center)
             {
                 if (qrBitmap != null) {
                     val imageBitmap = qrBitmap?.asImageBitmap()
@@ -129,6 +120,7 @@ private fun generateQRCodeBitmap(content: String): Bitmap? {
         Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888).apply {
             setPixels(pixels, 0, width, 0, 0, width, height)
         }
+
     } catch (e: WriterException) {
         e.printStackTrace()
         null

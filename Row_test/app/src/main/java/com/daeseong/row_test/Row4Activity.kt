@@ -27,8 +27,8 @@ class Row4Activity : ComponentActivity() {
             Row_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.Center,
@@ -52,8 +52,7 @@ fun Test4() {
         IconButton(
             onClick = {
                 Toast.makeText(context, "click1", Toast.LENGTH_SHORT).show()
-            },
-        )
+            },)
         {
             Icon(imageVector = Icons.Filled.Search,null)
         }
@@ -61,8 +60,7 @@ fun Test4() {
         IconButton(
             onClick = {
                 Toast.makeText(context, "click2", Toast.LENGTH_SHORT).show()
-            },
-        )
+            },)
         {
             Icon(imageVector = Icons.Filled.ArrowBack,null)
         }
@@ -70,14 +68,11 @@ fun Test4() {
         IconButton(
             onClick = {
                 Toast.makeText(context, "click3", Toast.LENGTH_SHORT).show()
-            },
-        )
+            },)
         {
             Icon(imageVector = Icons.Filled.Done,null)
         }
-
     }
-
 }
 
 @Preview(showBackground = true)

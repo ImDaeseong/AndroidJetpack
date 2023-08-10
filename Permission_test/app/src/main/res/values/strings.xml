@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Permission_test</string>
+    <string name="title_activity_permission1">Permission1Activity</string>
+    <string name="title_activity_permission2">Permission2Activity</string>
+    <string name="title_activity_permission3">Permission3Activity</string>
+    <string name="title_activity_permission4">Permission4Activity</string>
+    <string name="title_activity_permission5">Permission5Activity</string>
+    <string name="title_activity_permission6">Permission6Activity</string>
+</resources>

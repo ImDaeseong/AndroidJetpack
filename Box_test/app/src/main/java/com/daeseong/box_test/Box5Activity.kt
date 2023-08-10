@@ -47,7 +47,6 @@ fun Test5() {
             Text(text = "text2", Modifier.align(Alignment.Center))
         }
     }
-    
 }
 
 @Preview(showBackground = true)

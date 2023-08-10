@@ -26,8 +26,7 @@ class Row2Activity : ComponentActivity() {
 @Composable
 fun Test2() {
 
-    Column(
-        modifier = Modifier.fillMaxSize())
+    Column(modifier = Modifier.fillMaxSize())
     {
         Column(
             modifier = Modifier
@@ -36,9 +35,7 @@ fun Test2() {
                 .background(Color.White),
             verticalArrangement = Arrangement.Top)
         {
-
-            Row(
-                modifier = Modifier.fillMaxWidth(),
+            Row(modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween)
             {
                 TextButton(
@@ -83,7 +80,6 @@ fun Test2() {
                     )
                 }
             }
-
         }
 
         Column(
@@ -93,10 +89,7 @@ fun Test2() {
                 .background(Color.Gray),
             verticalArrangement = Arrangement.Bottom)
         {
-
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween)
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween)
             {
                 TextButton(
                     onClick = {},

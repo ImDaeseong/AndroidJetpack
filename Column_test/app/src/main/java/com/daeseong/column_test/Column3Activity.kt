@@ -26,8 +26,8 @@ class Column3Activity : ComponentActivity() {
             Column_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxWidth(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Test3()
                 }
             }
@@ -70,7 +70,6 @@ fun Test3() {
             color = Color.Black,
             modifier = Modifier.fillMaxWidth()
         )
-
     }
 }
 

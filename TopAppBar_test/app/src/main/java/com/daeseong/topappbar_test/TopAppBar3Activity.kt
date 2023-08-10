@@ -19,13 +19,13 @@ class TopAppBar3Activity : ComponentActivity() {
             TopAppBar_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.Top,
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
+                        horizontalAlignment = Alignment.CenterHorizontally)
+                    {
                         Test3()
                     }
                 }
@@ -33,7 +33,6 @@ class TopAppBar3Activity : ComponentActivity() {
         }
     }
 }
-
 
 @Composable
 fun TopAppBarUI1() {
@@ -47,13 +46,11 @@ fun TopAppBarUI1() {
     )
 }
 
-
 @Composable
 fun TopAppBarUI2() {
 
     TopAppBar(
         title = {
-
             Row() {
                 Text("TopAppBar1 ", color = Color.Red)
                 Text("TopAppBar2 ", color = Color.Green)
@@ -67,7 +64,6 @@ fun TopAppBarUI2() {
 
 @Composable
 fun Test3() {
-
     TopAppBarUI1()
     TopAppBarUI2()
 }

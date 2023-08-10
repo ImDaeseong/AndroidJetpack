@@ -33,14 +33,9 @@ fun ButtonEx(context : Context, intent : Intent, title : String) {
     Button (
         onClick = {
             context.startActivity(intent)
-        } ,
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(10.dp),
+        } , modifier = Modifier.fillMaxWidth().padding(10.dp),
         shape = RoundedCornerShape(10.dp),
-        colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray)
-    )
-
+        colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray))
     {
         Text(modifier = Modifier
             .fillMaxWidth()
@@ -62,7 +57,6 @@ fun Buttons()  {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
-
         ButtonEx(context, Intent(context, WebView1Activity::class.java), "button1")
         Divider(modifier = Modifier.padding(start = 10.dp).padding(end = 10.dp), color = Color.Gray)
 

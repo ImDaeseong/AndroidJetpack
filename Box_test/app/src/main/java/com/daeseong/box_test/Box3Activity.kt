@@ -32,16 +32,14 @@ fun Test3() {
     Box(
         modifier = Modifier
             .background(Color.Gray)
-            .fillMaxSize()
-            .padding(20.dp),
+            .fillMaxSize().padding(20.dp),
         contentAlignment = Alignment.Center)
     {
         Column(
             modifier = Modifier
                 .background(Color.White),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(10.dp)
-        )
+            verticalArrangement = Arrangement.spacedBy(10.dp))
         {
             Box(modifier = Modifier
                 .size(100.dp)
@@ -56,7 +54,6 @@ fun Test3() {
                 .background(Color.Yellow))
         }
     }
-
 }
 
 @Preview(showBackground = true)

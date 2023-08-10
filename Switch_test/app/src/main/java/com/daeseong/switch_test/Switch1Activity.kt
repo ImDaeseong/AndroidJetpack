@@ -24,9 +24,8 @@ class Switch1Activity : ComponentActivity() {
             Switch_testTheme {
                  Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-
+                    color = MaterialTheme.colors.background)
+                 {
                      Column(
                          modifier = Modifier.fillMaxSize(),
                          verticalArrangement = Arrangement.SpaceEvenly,
@@ -44,9 +43,7 @@ class Switch1Activity : ComponentActivity() {
 @Composable
 fun Test1() {
 
-    val checked = remember {
-        mutableStateOf(true)
-    }
+    val checked = remember { mutableStateOf(true) }
 
     Switch(
         modifier = Modifier

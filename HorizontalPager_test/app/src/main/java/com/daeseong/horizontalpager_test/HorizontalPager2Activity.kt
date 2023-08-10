@@ -30,7 +30,6 @@ import java.util.TimerTask
 import kotlin.math.*
 import androidx.compose.ui.unit.IntOffset
 
-
 class HorizontalPager2Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -77,8 +76,7 @@ fun Test2() {
                 state = pageState,
                 count = pageCount * 10, //count = pageCount * 1000, // 아이템을 반복하도록 count 설정 => list 개수보다만 크면 무한 반복이 가능
                 itemSpacing = 10.dp,
-                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 10.dp))
-            { index ->
+                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 10.dp)) { index ->
 
                 val page = index % pageCount
                 println(page)

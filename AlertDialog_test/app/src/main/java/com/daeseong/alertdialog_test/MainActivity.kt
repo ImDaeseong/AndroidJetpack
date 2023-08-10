@@ -45,13 +45,11 @@ fun Buttons() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
-
         Button (
             onClick = {
                 val intent = Intent(context, AlertDialog1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button1")
         }
@@ -60,8 +58,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, AlertDialog1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button2")
         }
@@ -70,8 +67,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, AlertDialog1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button3")
         }
@@ -80,8 +76,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, AlertDialog1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button4")
         }
@@ -90,8 +85,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, AlertDialog1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button5")
         }

@@ -34,7 +34,6 @@ fun Test4() {
         .background(color = Color.Gray)
         .fillMaxWidth())
     {
-        
         Column(modifier = Modifier
             .height(100.dp)
             .background(Color.White)
@@ -128,7 +127,6 @@ fun Test4() {
             )
         }
     }
-
 }
 
 @Preview(showBackground = true)

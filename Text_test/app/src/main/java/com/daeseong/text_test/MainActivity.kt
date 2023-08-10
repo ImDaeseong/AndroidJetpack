@@ -31,27 +31,18 @@ class MainActivity : ComponentActivity() {
 fun ButtonEx(context : Context, intent : Intent, title : String) {
 
     Button (
-        onClick = {
-            context.startActivity(intent)
-        } ,
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(10.dp),
+        onClick = { context.startActivity(intent) } ,
+        modifier = Modifier.fillMaxWidth().padding(10.dp),
         shape = RoundedCornerShape(10.dp),
-        colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray)
-    )
+        colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray)) {
 
-    {
-        Text(modifier = Modifier
-            .fillMaxWidth()
-            .padding(10.dp),
+        Text(modifier = Modifier.fillMaxWidth().padding(10.dp),
             text = title,
             textAlign = TextAlign.Center,
             color = Color.White
         )
     }
 }
-
 
 @Composable
 fun Buttons() {
@@ -61,8 +52,7 @@ fun Buttons() {
     Column (
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally)
-    {
+        horizontalAlignment = Alignment.CenterHorizontally) {
 
         ButtonEx(context, Intent(context, Text1Activity::class.java), "button1")
         Divider(modifier = Modifier.padding(start = 10.dp).padding(end = 10.dp), color = Color.Gray)
@@ -70,7 +60,7 @@ fun Buttons() {
         ButtonEx(context, Intent(context, Text2Activity::class.java), "button2")
         Divider(modifier = Modifier.padding(start = 10.dp).padding(end = 10.dp), color = Color.Gray)
 
-        ButtonEx(context, Intent(context, Text1Activity::class.java), "button3")
+        ButtonEx(context, Intent(context, Text3Activity::class.java), "button3")
         Divider(modifier = Modifier.padding(start = 10.dp).padding(end = 10.dp), color = Color.Gray)
 
         ButtonEx(context, Intent(context, Text1Activity::class.java), "button4")

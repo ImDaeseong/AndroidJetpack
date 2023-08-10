@@ -44,8 +44,8 @@ fun Test1() {
     Box(
         modifier = Modifier
             .background(Color.Yellow)
-            .size(width = 300.dp, height = 100.dp))
-    {
+            .size(width = 300.dp, height = 100.dp)) {
+
         Text(text = "TopStart", Modifier.align(Alignment.TopStart))
         Text(text = "TopCenter", Modifier.align(Alignment.TopCenter))
         Text(text = "TopEnd", Modifier.align(Alignment.TopEnd))

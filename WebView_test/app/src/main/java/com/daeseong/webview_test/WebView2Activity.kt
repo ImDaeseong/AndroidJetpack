@@ -50,9 +50,7 @@ fun Test2()  {
             list.forEachIndexed { index, s ->
 
                 Tab(
-                    text = {
-                        Text(text = s)
-                    },
+                    text = { Text(text = s) },
                     selected = pageState.currentPage == index,
                     onClick = {
                         coroutineState.launch {
@@ -64,7 +62,6 @@ fun Test2()  {
         }
 
         HorizontalPager(count = list.size, state = pageState) { page ->
-
             when(page) {
                 0 -> TabScreen1()
                 1 -> TabScreen2()
@@ -85,7 +82,7 @@ fun TabScreen1() {
             WebView(it).apply {
                 layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
                 webViewClient = WebViewClient()
-                //settings.javaScriptEnabled = true
+                settings.javaScriptEnabled = true
                 loadUrl(sUrl)
             }
         }, update = {
@@ -105,7 +102,7 @@ fun TabScreen2() {
             WebView(it).apply {
                 layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
                 webViewClient = WebViewClient()
-                //settings.javaScriptEnabled = true
+                settings.javaScriptEnabled = true
                 loadUrl(sUrl)
             }
         }, update = {
@@ -125,7 +122,7 @@ fun TabScreen3() {
             WebView(it).apply {
                 layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
                 webViewClient = WebViewClient()
-                //settings.javaScriptEnabled = true
+                settings.javaScriptEnabled = true
                 loadUrl(sUrl)
             }
         }, update = {

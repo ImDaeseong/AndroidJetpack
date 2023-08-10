@@ -38,7 +38,6 @@ fun Test2() {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally)
         {
-
             LinearProgressIndicator(modifier = Modifier.height(20.dp),
                 backgroundColor = Color.Gray,
                 color = Color.Red,

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 네트워크 연결 상태 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- Wifi 상태 변경 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Wifi 연결 상태 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 위치 접근 권한 gps -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 위치 접근 권한 wifi -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 앱이 추가 위치 정보 제공업체 명령에 액세스하도록 허용 이 경우 앱이 GPS 또는 기타 위치 소스의 작동을 방해하게 될 수 있음 -->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" /> <!-- 무음 모드에서 SMS를 수신하여 폰을 찾을 때, 무음 모드를 해제하기 위해서 위해서 필요 -->
+    <uses-permission android:name="android.permission.ADD_VOICEMAIL" /> <!-- 음성 사서함 추가 -->
+    <uses-permission android:name="android.permission.INTERNET" />  <!-- 인터넷 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 카메라 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- 플래시라이트 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 통화 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 알람 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 진동 -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" /> <!-- 달력 읽기 -->
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" /> <!-- 달력 쓰기 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 주소록 읽기 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" /> <!-- 주소록 쓰기 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- boot 완료 -->
+    <uses-permission android:name="android.permission.RECEIVE_MMS" /> <!-- mms 수신 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- sms 수신 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" /> <!-- sms 쓰기 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 블루투스 -->
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- sms 보내기 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /><!-- 안드로이드에서 폰 정보 가져오기 -->
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_SOCIAL_STREAM" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.READ_VOICEMAIL" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND" />
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_WRITE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.TRANSMIT_IR" />
+    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_VOICEMAIL" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Permission_test"
+        tools:targetApi="31">
+        <activity
+            android:name=".Permission6Activity"
+            android:exported="false"
+            android:label="@string/title_activity_permission6"
+            android:theme="@style/Theme.Permission_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Permission5Activity"
+            android:exported="false"
+            android:label="@string/title_activity_permission5"
+            android:theme="@style/Theme.Permission_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Permission4Activity"
+            android:exported="false"
+            android:label="@string/title_activity_permission4"
+            android:theme="@style/Theme.Permission_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Permission3Activity"
+            android:exported="false"
+            android:label="@string/title_activity_permission3"
+            android:theme="@style/Theme.Permission_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Permission2Activity"
+            android:exported="false"
+            android:label="@string/title_activity_permission2"
+            android:theme="@style/Theme.Permission_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/file_paths" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Permission1Activity"
+            android:exported="false"
+            android:label="@string/title_activity_permission1"
+            android:theme="@style/Theme.Permission_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Permission_test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

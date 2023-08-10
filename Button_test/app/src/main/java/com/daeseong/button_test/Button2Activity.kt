@@ -54,9 +54,7 @@ fun Test2() {
             Toast.makeText(context, "click1", Toast.LENGTH_SHORT).show()
         })
     {
-        Image(
-            painter = painterResource(id = R.drawable.play),
-            contentDescription = "play" )
+        Image(painter = painterResource(id = R.drawable.play), contentDescription = "play" )
     }
 
     IconButton(
@@ -65,10 +63,7 @@ fun Test2() {
             Toast.makeText(context, "click2", Toast.LENGTH_SHORT).show()
         })
     {
-        Icon(
-            imageVector = Icons.Filled.Favorite,
-            contentDescription = "Favorite"
-        )
+        Icon(imageVector = Icons.Filled.Favorite, contentDescription = "Favorite")
     }
 
     IconButton(
@@ -77,10 +72,7 @@ fun Test2() {
             Toast.makeText(context, "click3", Toast.LENGTH_SHORT).show()
         })
     {
-        Icon(
-            Icons.Filled.Email,
-            contentDescription = "Email"
-        )
+        Icon(Icons.Filled.Email, contentDescription = "Email")
     }
 }
 

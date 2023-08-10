@@ -37,8 +37,8 @@ class NavController2Activity : ComponentActivity() {
             NavController_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Test2()
                 }
             }
@@ -71,18 +71,14 @@ fun Page4Screen(navController : NavController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = {
-                    Text(text = "title1", color = Color.Red)
-                        },
+                title = { Text(text = "title1", color = Color.Red) },
                 backgroundColor = Color.Gray,
                 contentColor = Color.White,
                 modifier = Modifier.clickable {
                     navController.navigate("page5")
                 }
             )
-        })
-
-    {   paddingValues ->
+        }) {   paddingValues ->
 
         Column(modifier = Modifier
             .fillMaxSize()
@@ -90,7 +86,6 @@ fun Page4Screen(navController : NavController) {
             .padding(paddingValues)
             .padding(horizontal = 10.dp))
         {
-
             Text(text = "subtitle", modifier = Modifier.padding(top=10.dp))
 
             LazyColumn()
@@ -162,18 +157,14 @@ fun Page5Screen(navController : NavController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = {
-                    Text(text = "title2", color = Color.Red)
-                },
+                title = { Text(text = "title2", color = Color.Red) },
                 backgroundColor = Color.Gray,
                 contentColor = Color.White,
                 modifier = Modifier.clickable {
                     navController.navigate("page4")
                 }
-            )
-        })
-
-    {   paddingValues ->
+            )})
+    { paddingValues ->
 
         Column(modifier = Modifier
             .fillMaxSize()
@@ -181,7 +172,6 @@ fun Page5Screen(navController : NavController) {
             .padding(paddingValues)
             .padding(horizontal = 10.dp))
         {
-
             val pageState = rememberPagerState()
 
             val list = listOf(
@@ -196,13 +186,11 @@ fun Page5Screen(navController : NavController) {
                 contentPadding = PaddingValues(horizontal = 10.dp, vertical = 10.dp),
                 modifier = Modifier
                     .height(300.dp)
-                    .background(Color.LightGray)
-            ) { index ->
+                    .background(Color.LightGray))
+            { index ->
 
-                Card(modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(10.dp), shape = RoundedCornerShape(10.dp)
-                )
+                Card(modifier = Modifier.fillMaxWidth()
+                    .padding(10.dp), shape = RoundedCornerShape(10.dp))
                 {
                     Image(
                         painter = painterResource(id = list[index]),
@@ -210,7 +198,6 @@ fun Page5Screen(navController : NavController) {
                         contentScale = ContentScale.Fit)
                 }
             }
-
         }
     }
 }

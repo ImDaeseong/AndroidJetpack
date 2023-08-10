@@ -88,7 +88,6 @@ fun setTextColor2(value : String){
 @Preview
 @Composable
 fun Test2() {
-
     setTextColor1("제목 색상 변경 1")
     setTextColor1("ab cd ef 1")
 }

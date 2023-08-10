@@ -47,7 +47,7 @@ fun CallWeb2() {
                     return super.shouldOverrideUrlLoading(view, request)
                 }
             }
-            //settings.javaScriptEnabled = true
+            settings.javaScriptEnabled = true
             loadUrl(sUrl)
         }
     }, update = {
@@ -65,7 +65,7 @@ fun CallWeb1() {
         WebView(it).apply {
             layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
             webViewClient = WebViewClient()
-            //settings.javaScriptEnabled = true
+            settings.javaScriptEnabled = true
             loadUrl(sUrl)
         }
     }, update = {

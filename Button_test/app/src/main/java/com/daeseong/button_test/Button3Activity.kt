@@ -56,9 +56,7 @@ fun Test3() {
             Toast.makeText(context, "click1", Toast.LENGTH_SHORT).show()
         })
     {
-        Image(
-            painter = painterResource(id = R.drawable.play),
-            contentDescription = "play" )
+        Image(painter = painterResource(id = R.drawable.play), contentDescription = "play" )
     }
 
     OutlinedButton(       

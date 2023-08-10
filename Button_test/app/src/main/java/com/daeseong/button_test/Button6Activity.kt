@@ -38,8 +38,7 @@ class Button6Activity : ComponentActivity() {
 @Composable
 fun ButtonEx(title: String, onClick: () -> Unit) {
 
-    Button(modifier = Modifier.fillMaxWidth()
-        .padding(horizontal = 10.dp, vertical = 5.dp),
+    Button(modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 5.dp),
         onClick = onClick)
     {
         Text(text = title, fontSize = 15.sp, color = Color.White)

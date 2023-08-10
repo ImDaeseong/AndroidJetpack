@@ -63,7 +63,6 @@ fun Test2() {
                 color = Color.White)
         }
     }
-
 }
 
 @Preview(showBackground = true)

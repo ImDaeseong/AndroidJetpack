@@ -26,8 +26,8 @@ class TopAppBar5Activity : ComponentActivity() {
             Column(
                 modifier = Modifier.fillMaxSize(),
                 verticalArrangement = Arrangement.Top,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
+                horizontalAlignment = Alignment.CenterHorizontally)
+            {
                 Test5()
             }
         }

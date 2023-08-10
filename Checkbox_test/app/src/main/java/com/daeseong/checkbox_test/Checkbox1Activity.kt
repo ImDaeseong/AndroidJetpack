@@ -126,12 +126,9 @@ fun checkUI5() {
                 )
             )
 
-            Text(modifier = Modifier.align(Alignment.CenterVertically),
-                text = items)
+            Text(modifier = Modifier.align(Alignment.CenterVertically), text = items)
         }
-
     }
-
 }
 
 @Composable

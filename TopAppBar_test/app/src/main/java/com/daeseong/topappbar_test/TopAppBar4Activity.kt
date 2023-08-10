@@ -22,13 +22,13 @@ class TopAppBar4Activity : ComponentActivity() {
             TopAppBar_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.Top,
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
+                        horizontalAlignment = Alignment.CenterHorizontally)
+                    {
                         Test4()
                     }
                 }
@@ -47,7 +47,6 @@ fun Test4()  {
             Text("TopAppBar")
         },
         navigationIcon = {
-
 
         }, actions = {
 
@@ -69,7 +68,6 @@ fun Test4()  {
                 }
             }
         })
-
 }
 
 @Preview(showBackground = true)

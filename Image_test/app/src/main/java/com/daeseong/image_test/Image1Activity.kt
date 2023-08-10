@@ -49,9 +49,7 @@ fun Test1() {
         Image(
             modifier = Modifier
                 .clickable {
-                    Toast
-                        .makeText(context, "Image1", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(context, "Image1", Toast.LENGTH_SHORT).show()
                 }
                 .size(size = 100.dp)
                 .border(width = 1.dp, color = Color.Gray),
@@ -63,9 +61,7 @@ fun Test1() {
         Image(
             modifier = Modifier
                 .clickable {
-                    Toast
-                        .makeText(context, "Image2", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(context, "Image2", Toast.LENGTH_SHORT).show()
                 }
                 .size(size = 100.dp)
                 .clip(shape = RoundedCornerShape(8.dp))
@@ -74,16 +70,12 @@ fun Test1() {
             contentDescription = null,
             contentScale = ContentScale.FillBounds)
 
-
         Spacer(modifier = Modifier.height(10.dp))
-
 
         Image(
             modifier = Modifier
                 .clickable {
-                    Toast
-                        .makeText(context, "Image3", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(context, "Image3", Toast.LENGTH_SHORT).show()
                 }
                 .size(size = 200.dp)
                 .clip(shape = CircleShape)
@@ -93,19 +85,15 @@ fun Test1() {
 
         Spacer(modifier = Modifier.height(10.dp))
 
-
         Image(
             modifier = Modifier
                 .clickable {
-                    Toast
-                        .makeText(context, "Image4", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(context, "Image4", Toast.LENGTH_SHORT).show()
                 }
                 .size(size = 200.dp),
             painter = painterResource(id = R.drawable.a),
             colorFilter = ColorFilter.tint(Color.Black.copy(alpha = 0.5f), BlendMode.DstIn),
             contentDescription = null)
-
     }
 }
 

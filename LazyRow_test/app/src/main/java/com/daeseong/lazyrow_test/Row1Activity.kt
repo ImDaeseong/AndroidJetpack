@@ -41,7 +41,6 @@ fun Test1() {
             .border(width = 1.dp, color = Color.Gray, shape = RoundedCornerShape(8.dp))
             .fillMaxWidth())
     {
-
         item {
             Text(text = "start text1", Modifier.padding(10.dp))
         }
@@ -63,7 +62,6 @@ fun Test1() {
              .fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(10.dp) )
     {
-
         item {
 
             Image(modifier = Modifier.size(100.dp).background(Color.Gray),
@@ -82,9 +80,7 @@ fun Test1() {
                 painter = painterResource(id = R.drawable.b),
                 contentDescription = null)
         }
-
     }
-
 }
 
 @Preview(showBackground = true)

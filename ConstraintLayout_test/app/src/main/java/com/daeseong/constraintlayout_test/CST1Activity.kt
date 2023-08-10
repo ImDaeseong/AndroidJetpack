@@ -26,7 +26,6 @@ class CST1Activity : ComponentActivity() {
             {
                 Test1()
             }
-
         }
     }
 }

@@ -26,8 +26,8 @@ class Column2Activity : ComponentActivity() {
             LazyColumn_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Test2()
                 }
             }
@@ -131,14 +131,11 @@ fun Test2() {
         .fillMaxSize()
         .padding(5.dp),
         state = scrollState,
-        verticalArrangement = Arrangement.spacedBy(10.dp)
-
-    ) {
-
+        verticalArrangement = Arrangement.spacedBy(10.dp))
+    {
         items(2) {
             itemUI(values = it)
         }
-
 
         item() {
             itemUI1(2)

@@ -8,10 +8,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.Button
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -49,8 +46,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, BottomAppBar1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button1")
         }
@@ -59,8 +55,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, BottomAppBar2Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button2")
         }
@@ -69,8 +64,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, BottomAppBar3Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button3")
         }
@@ -79,8 +73,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, BottomAppBar1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button4")
         }
@@ -89,8 +82,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, BottomAppBar1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button5")
         }

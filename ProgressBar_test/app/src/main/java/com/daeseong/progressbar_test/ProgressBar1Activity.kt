@@ -31,7 +31,6 @@ fun ProgressBarUI1() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
-
         LinearProgressIndicator(modifier = Modifier
             .padding(bottom = 10.dp)
             .width(100.dp)
@@ -53,7 +52,6 @@ fun ProgressBarUI1() {
 
 @Composable
 fun Test1() {
-
     ProgressBarUI1()
 }
 

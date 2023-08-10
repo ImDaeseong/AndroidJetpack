@@ -25,8 +25,8 @@ class Button1Activity : ComponentActivity() {
 
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
 
                     Column(
                         modifier = Modifier.fillMaxSize(),
@@ -60,8 +60,7 @@ fun Test1() {
             contentColor = Color.White,
             disabledBackgroundColor = Color.Gray,
             disabledContentColor = Color.LightGray
-        ),
-        border = BorderStroke(width = 1.dp, color = Color.Red))
+        ),border = BorderStroke(width = 1.dp, color = Color.Red))
     {
         Text(text = "Button1")
         Spacer(modifier = Modifier.size(50.dp))
@@ -83,8 +82,7 @@ fun Test1() {
             contentColor = Color.White,
             disabledBackgroundColor = Color.Gray,
             disabledContentColor = Color.LightGray
-        ),
-        border = BorderStroke(width = 1.dp, color = Color.Red))
+        ), border = BorderStroke(width = 1.dp, color = Color.Red))
     {
         Text(text = "Button2")
         Spacer(modifier = Modifier.size(50.dp))

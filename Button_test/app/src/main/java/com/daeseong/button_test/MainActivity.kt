@@ -47,8 +47,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Button1Activity::class.java)
                 context.startActivity(intent)
-            },
-            colors = ButtonDefaults.textButtonColors(backgroundColor = Color.Gray),
+            }, colors = ButtonDefaults.textButtonColors(backgroundColor = Color.Gray),
             modifier = Modifier.wrapContentSize())
         {
             Text(text = "button1", color = Color.White)
@@ -59,8 +58,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Button2Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.wrapContentSize(),
+            } , modifier = Modifier.wrapContentSize(),
             colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray, contentColor = Color.Red))
         {
             Text(text = "button2")
@@ -71,10 +69,8 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Button3Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.wrapContentSize() )
+            } , modifier = Modifier.wrapContentSize() )
         {
-            
             Icon(
                 painter = painterResource(id = R.drawable.ic_launcher_foreground),
                 contentDescription = "play",
@@ -90,11 +86,10 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Button4Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.wrapContentSize() )
+            } , modifier = Modifier.wrapContentSize() )
         {
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-
+            Column(horizontalAlignment = Alignment.CenterHorizontally)
+            {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_launcher_foreground),
                     contentDescription = "play",
@@ -109,8 +104,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Button5Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.wrapContentSize(),
+            } , modifier = Modifier.wrapContentSize(),
             contentPadding = PaddingValues(10.dp))
         {
             Text(text = "button5 Click")
@@ -120,8 +114,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Button6Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.wrapContentSize(),
+            } , modifier = Modifier.wrapContentSize(),
             contentPadding = PaddingValues(10.dp))
         {
             Text(text = "button6 Click")

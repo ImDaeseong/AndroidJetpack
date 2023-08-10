@@ -20,8 +20,8 @@ class DropdownMenu1Activity : ComponentActivity() {
             DropdownMenu_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.Center,
@@ -60,7 +60,6 @@ fun Test1()  {
             }
         }
     }
-
 }
 
 @Preview(showBackground = true)

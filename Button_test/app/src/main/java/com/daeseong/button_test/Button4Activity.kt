@@ -48,8 +48,7 @@ fun Test4() {
     TextButton(
         onClick = {
             Toast.makeText(context, "click1", Toast.LENGTH_SHORT).show()
-        }
-    )
+        })
     {
         Text(text = "TextButton1")
     }
@@ -57,12 +56,10 @@ fun Test4() {
     TextButton(
         colors = ButtonDefaults.buttonColors(
             backgroundColor = Color.Gray
-        ),
-        border = BorderStroke(width = 1.dp, color = Color.Red),
+        ), border = BorderStroke(width = 1.dp, color = Color.Red),
         onClick = {
             Toast.makeText(context, "click1", Toast.LENGTH_SHORT).show()
-        }
-    )
+        })
     {
         Text(text = "TextButton2")
     }

@@ -27,8 +27,8 @@ class MainActivity : ComponentActivity() {
             TopAppBar_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.SpaceEvenly,
@@ -44,6 +44,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Buttons() {
+
     val context = LocalContext.current
 
     Column (
@@ -55,8 +56,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, TopAppBar1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button1")
         }
@@ -65,8 +65,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, TopAppBar2Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button2")
         }
@@ -75,8 +74,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, TopAppBar3Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button3")
         }
@@ -85,8 +83,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, TopAppBar4Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button4")
         }
@@ -95,8 +92,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, TopAppBar5Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button5")
         }

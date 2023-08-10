@@ -38,9 +38,7 @@ fun ButtonEx(context : Context, intent : Intent, title : String) {
             .fillMaxWidth()
             .padding(10.dp),
         shape = RoundedCornerShape(10.dp),
-        colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray)
-    )
-
+        colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray))
     {
         Text(modifier = Modifier
             .fillMaxWidth()

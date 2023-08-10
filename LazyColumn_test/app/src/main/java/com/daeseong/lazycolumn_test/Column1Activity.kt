@@ -39,8 +39,7 @@ fun Test1() {
             .padding(start = 10.dp)
             .padding(end = 10.dp)
             .border(width = 1.dp, color = Color.Gray, shape = RoundedCornerShape(8.dp) )
-            .fillMaxSize()
-    )
+            .fillMaxSize())
     {
         item {
             Text(text = "start text1", Modifier.padding(top = 10.dp).padding(start = 10.dp).padding(end = 10.dp))
@@ -54,7 +53,6 @@ fun Test1() {
             Text(text = "end text1", Modifier.padding(bottom = 10.dp).padding(start = 10.dp).padding(end = 10.dp))
         }
     }
-
 }
 
 @Preview(showBackground = true)

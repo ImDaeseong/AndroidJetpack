@@ -51,20 +51,16 @@ fun Test2() {
         Text(text = "text2", Modifier.align(Alignment.Center))
         
         FloatingActionButton(
-            modifier = Modifier
-                .align(Alignment.BottomEnd)
-                .padding(10.dp),
+            modifier = Modifier.align(Alignment.BottomEnd).padding(10.dp),
             onClick = {
                 Toast.makeText(context, "click1", Toast.LENGTH_SHORT).show()
             },
             backgroundColor = Color.Yellow,
-            contentColor = Color.White
-        )
+            contentColor = Color.White)
         {
             Image( painter = painterResource(id = R.drawable.play),null)
         }
     }
-
 }
 
 @Preview(showBackground = true)

@@ -37,7 +37,6 @@ fun Test3() {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally)
         {
-
             CircularProgressIndicator(modifier = Modifier.size(200.dp),
                 strokeWidth = 10.dp,
                 color = Color.Red,
