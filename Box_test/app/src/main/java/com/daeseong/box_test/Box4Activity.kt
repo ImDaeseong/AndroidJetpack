@@ -29,11 +29,7 @@ class Box4Activity : ComponentActivity() {
 @Composable
 fun Test4() {
 
-    Box(
-        modifier = Modifier
-            .background(Color.Gray)
-            .fillMaxSize()
-            .padding(20.dp),
+    Box(modifier = Modifier.background(Color.Gray).fillMaxSize().padding(20.dp),
         contentAlignment = Alignment.Center)
     {
         Box(modifier = Modifier

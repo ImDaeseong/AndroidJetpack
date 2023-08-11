@@ -29,15 +29,10 @@ class Box3Activity : ComponentActivity() {
 @Composable
 fun Test3() {
 
-    Box(
-        modifier = Modifier
-            .background(Color.Gray)
-            .fillMaxSize().padding(20.dp),
+    Box(modifier = Modifier.background(Color.Gray).fillMaxSize().padding(20.dp),
         contentAlignment = Alignment.Center)
     {
-        Column(
-            modifier = Modifier
-                .background(Color.White),
+        Column(modifier = Modifier.background(Color.White),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(10.dp))
         {

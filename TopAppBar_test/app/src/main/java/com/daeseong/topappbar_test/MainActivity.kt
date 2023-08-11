@@ -96,6 +96,15 @@ fun Buttons() {
         {
             Text(text = "button5")
         }
+
+        Button (
+            onClick = {
+                val intent = Intent(context, TopAppBar6Activity::class.java)
+                context.startActivity(intent)
+            } ,modifier = Modifier.padding(10.dp) )
+        {
+            Text(text = "button6")
+        }
     }
 }
 

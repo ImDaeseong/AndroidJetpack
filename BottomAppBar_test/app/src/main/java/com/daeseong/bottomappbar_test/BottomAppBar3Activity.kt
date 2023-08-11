@@ -34,8 +34,8 @@ class BottomAppBar3Activity : ComponentActivity() {
                 Column(
                     modifier = Modifier.fillMaxSize(),
                     verticalArrangement = Arrangement.Bottom,
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
+                    horizontalAlignment = Alignment.CenterHorizontally)
+                {
                     Test3()
                 }
             }
@@ -61,10 +61,9 @@ fun Test3() {
     val context = LocalContext.current
 
     BottomAppBar(backgroundColor = Color.Gray) {
-        Row(
-            modifier = Modifier.weight(1f),
-            horizontalArrangement = Arrangement.SpaceAround
-        ) {
+
+        Row(modifier = Modifier.weight(1f), horizontalArrangement = Arrangement.SpaceAround)
+        {
             ButtonIconEx(context, Icons.Filled.Favorite)
             ButtonIconEx(context, Icons.Filled.Email)
             ButtonIconEx(context, Icons.Filled.Search)

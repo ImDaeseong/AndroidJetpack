@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">BottomNavigation_test</string>
     <string name="title_activity_bottom_main">BottomMainActivity</string>
+    <string name="title_activity_bottom_main1">BottomMain1Activity</string>
+    <string name="title_activity_bottom_main2">BottomMain2Activity</string>
+    <string name="title_activity_bottom_main3">BottomMain3Activity</string>
+    <string name="title_activity_bottom_main4">BottomMain4Activity</string>
 </resources>

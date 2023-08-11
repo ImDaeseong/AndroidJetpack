@@ -13,6 +13,15 @@
         android:theme="@style/Theme.TopAppBar_test"
         tools:targetApi="31">
         <activity
+            android:name=".TopAppBar6Activity"
+            android:exported="false"
+            android:label="@string/title_activity_top_app_bar6"
+            android:theme="@style/Theme.TopAppBar_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".TopAppBar5Activity"
             android:exported="false"
             android:label="@string/title_activity_top_app_bar5"

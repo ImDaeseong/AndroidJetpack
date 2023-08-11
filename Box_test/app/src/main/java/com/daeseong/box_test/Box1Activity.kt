@@ -23,8 +23,8 @@ class Box1Activity : ComponentActivity() {
             Box_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.SpaceEvenly,
@@ -41,11 +41,9 @@ class Box1Activity : ComponentActivity() {
 @Composable
 fun Test1() {
 
-    Box(
-        modifier = Modifier
-            .background(Color.Yellow)
-            .size(width = 300.dp, height = 100.dp)) {
-
+    Box(modifier = Modifier.background(Color.Yellow)
+        .size(width = 300.dp, height = 100.dp))
+    {
         Text(text = "TopStart", Modifier.align(Alignment.TopStart))
         Text(text = "TopCenter", Modifier.align(Alignment.TopCenter))
         Text(text = "TopEnd", Modifier.align(Alignment.TopEnd))

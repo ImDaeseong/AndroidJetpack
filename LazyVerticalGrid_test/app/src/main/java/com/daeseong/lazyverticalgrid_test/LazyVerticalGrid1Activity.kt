@@ -47,7 +47,8 @@ fun Test1() {
 
     val items = listOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7")
 
-    LazyVerticalGrid(modifier = Modifier.fillMaxSize(), cells = GridCells.Fixed(3),
+    LazyVerticalGrid(modifier = Modifier.fillMaxSize(),
+        cells = GridCells.Fixed(3),
         horizontalArrangement = Arrangement.spacedBy(10.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp),
         contentPadding = PaddingValues(all = 10.dp))

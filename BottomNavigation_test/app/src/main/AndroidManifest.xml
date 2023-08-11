@@ -14,6 +14,42 @@
         android:theme="@style/Theme.BottomNavigation_test"
         tools:targetApi="31">
         <activity
+            android:name=".BottomMain4Activity"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_main4"
+            android:theme="@style/Theme.BottomNavigation_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BottomMain3Activity"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_main3"
+            android:theme="@style/Theme.BottomNavigation_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BottomMain2Activity"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_main2"
+            android:theme="@style/Theme.BottomNavigation_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BottomMain1Activity"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_main1"
+            android:theme="@style/Theme.BottomNavigation_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".BottomMainActivity"
             android:exported="false"
             android:label="@string/title_activity_bottom_main"

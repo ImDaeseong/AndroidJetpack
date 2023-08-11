@@ -57,13 +57,10 @@ fun Test1() {
 
     Spacer(modifier = Modifier.height(10.dp))
 
-    LazyRow(
-        modifier = Modifier
-             .fillMaxWidth(),
+    LazyRow(modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(10.dp) )
     {
         item {
-
             Image(modifier = Modifier.size(100.dp).background(Color.Gray),
                 painter = painterResource(id = R.drawable.a),
                 contentDescription = null)

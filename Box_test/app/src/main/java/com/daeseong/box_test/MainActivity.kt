@@ -28,8 +28,8 @@ class MainActivity : ComponentActivity() {
 
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.SpaceEvenly,
@@ -57,8 +57,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Box1Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button1")
         }
@@ -67,8 +66,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Box2Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button2")
         }
@@ -77,8 +75,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Box3Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button3")
         }
@@ -87,8 +84,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Box4Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button4")
         }
@@ -97,8 +93,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Box5Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button5")
         }
@@ -107,8 +102,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Box6Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button6")
         }
@@ -117,8 +111,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Box7Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button7")
         }
@@ -127,8 +120,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Box8Activity::class.java)
                 context.startActivity(intent)
-            } ,
-            modifier = Modifier.padding(10.dp) )
+            } ,modifier = Modifier.padding(10.dp) )
         {
             Text(text = "button8")
         }

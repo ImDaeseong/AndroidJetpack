@@ -24,8 +24,8 @@ class MainActivity : ComponentActivity() {
             BottomAppBar_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Buttons()
                 }
             }

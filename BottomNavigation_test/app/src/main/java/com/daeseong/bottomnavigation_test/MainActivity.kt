@@ -39,20 +39,19 @@ fun Splash() {
     //한번만 호출위해 LaunchedEffect
     LaunchedEffect(key1 = true){
         delay(3000L)
-        context.startActivity(Intent(context, BottomMainActivity::class.java))
+        //context.startActivity(Intent(context, BottomMain1Activity::class.java))
+        //context.startActivity(Intent(context, BottomMain2Activity::class.java))
+        //context.startActivity(Intent(context, BottomMain3Activity::class.java))
+        context.startActivity(Intent(context, BottomMain4Activity::class.java))
     }
 
-    Column(modifier = Modifier
-        .fillMaxSize()
-        .background(Color.Gray),
+    Column(modifier = Modifier.fillMaxSize().background(Color.Gray),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
-        Image(modifier = Modifier.width(200.dp).height(200.dp),
-            painter = painterResource(id = R.drawable.g) , contentDescription = null)
+        Image(modifier = Modifier.width(200.dp).height(200.dp), painter = painterResource(id = R.drawable.g) , contentDescription = null)
 
-        Text(text = "loading...", fontWeight = FontWeight.Bold, fontSize = 20.sp,
-            color = Color.White, modifier = Modifier.padding(20.dp))
+        Text(text = "loading...", fontWeight = FontWeight.Bold, fontSize = 20.sp, color = Color.White, modifier = Modifier.padding(20.dp))
     }
 }
 

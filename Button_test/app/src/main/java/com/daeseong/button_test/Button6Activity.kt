@@ -55,9 +55,26 @@ fun Test6() {
     val context = LocalContext.current
     val coroutineScope = rememberCoroutineScope()
 
-    ButtonEx("ButtonEx") {
+    ButtonEx("ButtonEx1") {
         coroutineScope.launch {
             showToast(context, "click1")
+        }
+    }
+
+    ButtonEx("ButtonEx2") {
+        coroutineScope.launch {
+
+            val list = myList()
+            list.add("index1")
+            list.add("index2")
+            list.add("index3")
+            list.add("index4")
+            list.remove("index4")
+
+            for (item in list.getlist()) {
+                println(item)
+            }
+
         }
     }
 }
@@ -67,5 +84,22 @@ fun Test6() {
 fun DefaultPreview7() {
     Button_testTheme {
         Test6()
+    }
+}
+
+class myList {
+
+    private val mlist = mutableListOf<String>()
+
+    fun add(input : String) {
+        mlist.add(input)
+    }
+
+    fun remove(input : String) : Boolean {
+        return mlist.remove(input)
+    }
+
+    fun getlist() : List<String> {
+        return mlist
     }
 }

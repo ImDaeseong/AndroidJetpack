@@ -28,8 +28,8 @@ class Box2Activity : ComponentActivity() {
             Box_testTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
+                    color = MaterialTheme.colors.background)
+                {
                     Test2()
                 }
             }
@@ -42,10 +42,7 @@ fun Test2() {
 
     val context = LocalContext.current
 
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .background(Color.Yellow))
+    Box(modifier = Modifier.fillMaxWidth().background(Color.Yellow))
     {
         Text(text = "text1", Modifier.align(Alignment.TopCenter))
         Text(text = "text2", Modifier.align(Alignment.Center))
@@ -54,9 +51,7 @@ fun Test2() {
             modifier = Modifier.align(Alignment.BottomEnd).padding(10.dp),
             onClick = {
                 Toast.makeText(context, "click1", Toast.LENGTH_SHORT).show()
-            },
-            backgroundColor = Color.Yellow,
-            contentColor = Color.White)
+            },backgroundColor = Color.Yellow, contentColor = Color.White)
         {
             Image( painter = painterResource(id = R.drawable.play),null)
         }

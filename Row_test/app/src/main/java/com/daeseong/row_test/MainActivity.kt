@@ -7,7 +7,6 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -17,7 +16,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.daeseong.row_test.ui.theme.Row_testTheme
 
 class MainActivity : ComponentActivity() {
@@ -51,7 +49,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Row1Activity::class.java)
                 context.startActivity(intent)
-            } ,modifier = Modifier.padding(10.dp) )
+            })
         {
             Text(text = "button1")
         }
@@ -60,7 +58,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Row2Activity::class.java)
                 context.startActivity(intent)
-            } ,modifier = Modifier.padding(10.dp) )
+            })
         {
             Text(text = "button2")
         }
@@ -69,7 +67,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Row3Activity::class.java)
                 context.startActivity(intent)
-            } ,modifier = Modifier.padding(10.dp) )
+            })
         {
             Text(text = "button3")
         }
@@ -78,7 +76,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Row4Activity::class.java)
                 context.startActivity(intent)
-            } ,modifier = Modifier.padding(10.dp) )
+            })
         {
             Text(text = "button4")
         }
@@ -87,7 +85,7 @@ fun Buttons() {
             onClick = {
                 val intent = Intent(context, Row5Activity::class.java)
                 context.startActivity(intent)
-            } ,modifier = Modifier.padding(10.dp) )
+            })
         {
             Text(text = "button5")
         }
