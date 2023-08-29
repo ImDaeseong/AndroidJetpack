@@ -63,7 +63,7 @@ fun Buttons()  {
         ButtonEx(context, Intent(context, WebView2Activity::class.java), "button2")
         Divider(modifier = Modifier.padding(start = 10.dp).padding(end = 10.dp), color = Color.Gray)
 
-        ButtonEx(context, Intent(context, WebView1Activity::class.java), "button3")
+        ButtonEx(context, Intent(context, WebView3Activity::class.java), "button3")
         Divider(modifier = Modifier.padding(start = 10.dp).padding(end = 10.dp), color = Color.Gray)
 
         ButtonEx(context, Intent(context, WebView1Activity::class.java), "button4")
