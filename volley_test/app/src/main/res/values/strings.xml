@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">volley_test</string>
+    <string name="title_activity_volley1">Volley1Activity</string>
+    <string name="title_activity_volley2">Volley2Activity</string>
+    <string name="title_activity_volley3">Volley3Activity</string>
+    <string name="title_activity_volley4">Volley4Activity</string>
+    <string name="title_activity_volley5">Volley5Activity</string>
+</resources>
