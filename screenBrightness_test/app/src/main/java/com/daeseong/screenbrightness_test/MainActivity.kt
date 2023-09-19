@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
         if (isGranted) {
             Log.e(TAG, "권한 있음")
         } else {
-            Log.e(TAG,  "권한 거부")
+            Log.e(TAG, "권한 거부")
         }
     }
 
@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         val currentBrightness = getScreenBrightness(this)
-        Log.e(TAG, "현재 화면 밝기: $currentBrightness")
+        //Log.e(TAG, "현재 화면 밝기: $currentBrightness")
 
         //권한 체크
         checkPermission()
@@ -47,7 +47,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             slider_test(currentBrightness)
         }
-
     }
 
     private fun checkPermission() {
