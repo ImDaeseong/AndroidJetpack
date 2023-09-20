@@ -25,9 +25,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ProgressBar_testTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background)
+
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background)
                 {
                     Column(
                         modifier = Modifier.fillMaxSize(),
@@ -46,8 +45,7 @@ class MainActivity : ComponentActivity() {
 fun Buttons() {
     val context = LocalContext.current
 
-    Column (
-        modifier = Modifier.fillMaxSize(),
+    Column (modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
@@ -80,7 +78,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, ProgressBar1Activity::class.java)
+                val intent = Intent(context, ProgressBar4Activity::class.java)
                 context.startActivity(intent)
             } ,modifier = Modifier.padding(10.dp) )
         {
@@ -89,7 +87,7 @@ fun Buttons() {
 
         Button (
             onClick = {
-                val intent = Intent(context, ProgressBar1Activity::class.java)
+                val intent = Intent(context, ProgressBar5Activity::class.java)
                 context.startActivity(intent)
             } ,modifier = Modifier.padding(10.dp) )
         {

@@ -3,4 +3,6 @@
     <string name="title_activity_progress_bar1">ProgressBar1Activity</string>
     <string name="title_activity_progress_bar2">ProgressBar2Activity</string>
     <string name="title_activity_progress_bar3">ProgressBar3Activity</string>
+    <string name="title_activity_progress_bar4">ProgressBar4Activity</string>
+    <string name="title_activity_progress_bar5">ProgressBar5Activity</string>
 </resources>

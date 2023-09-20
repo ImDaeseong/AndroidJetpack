@@ -13,6 +13,24 @@
         android:theme="@style/Theme.ProgressBar_test"
         tools:targetApi="31">
         <activity
+            android:name=".ProgressBar5Activity"
+            android:exported="false"
+            android:label="@string/title_activity_progress_bar5"
+            android:theme="@style/Theme.ProgressBar_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ProgressBar4Activity"
+            android:exported="false"
+            android:label="@string/title_activity_progress_bar4"
+            android:theme="@style/Theme.ProgressBar_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ProgressBar3Activity"
             android:exported="false"
             android:label="@string/title_activity_progress_bar3"

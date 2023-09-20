@@ -50,6 +50,15 @@ fun Buttons() {
         {
             Text(text = "Button2")
         }
+
+        Button(modifier = Modifier.fillMaxWidth(),
+            onClick = {
+                val intent = Intent(context, ProgressBar3Activity::class.java)
+                context.startActivity(intent)
+            })
+        {
+            Text(text = "Button3")
+        }
     }
 }
 

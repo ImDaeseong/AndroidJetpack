@@ -26,8 +26,7 @@ class ProgressBar1Activity : ComponentActivity() {
 @Composable
 fun ProgressBarUI1() {
 
-    Column(modifier = Modifier
-        .fillMaxSize(),
+    Column(modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
