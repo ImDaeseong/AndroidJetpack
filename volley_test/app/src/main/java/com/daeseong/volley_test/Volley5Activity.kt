@@ -7,12 +7,15 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+//import androidx.compose.foundation.layout.BoxScopeInstance.matchParentSize
+//import androidx.compose.foundation.layout.BoxScopeInstance.matchParentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
@@ -45,9 +48,14 @@ class Volley5Activity : ComponentActivity() {
 
             val context = LocalContext.current
 
-            Column(modifier = Modifier.fillMaxSize().padding(16.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(16.dp))
+            Column(modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(16.dp))
             {
-                LazyColumn(modifier = Modifier.fillMaxSize().weight(1f).background(color = Color.LightGray, shape = RoundedCornerShape(16.dp)))
+                LazyColumn(modifier = Modifier
+                    .fillMaxSize()
+                    .weight(1f)
+                    .background(color = Color.LightGray, shape = RoundedCornerShape(16.dp)))
                 {
                     item {
                         Text(
@@ -59,7 +67,10 @@ class Volley5Activity : ComponentActivity() {
                     }
                 }
 
-                LazyColumn(modifier = Modifier.fillMaxSize().weight(1f).background(color = Color.LightGray, shape = RoundedCornerShape(16.dp)))
+                LazyColumn(modifier = Modifier
+                    .fillMaxSize()
+                    .weight(1f)
+                    .background(color = Color.LightGray, shape = RoundedCornerShape(16.dp)))
                 {
                     item {
                         Text(
@@ -98,7 +109,9 @@ class Volley5Activity : ComponentActivity() {
                                 }
                             )
                         },
-                        modifier = Modifier.padding(horizontal = 10.dp).weight(1f),
+                        modifier = Modifier
+                            .padding(horizontal = 10.dp)
+                            .weight(1f),
                         shape = RoundedCornerShape(size = 16.dp))
                     {
                         Text(text = "Button 1")
@@ -121,7 +134,9 @@ class Volley5Activity : ComponentActivity() {
                                 }
                             )
                         },
-                        modifier = Modifier.padding(horizontal = 10.dp).weight(1f),
+                        modifier = Modifier
+                            .padding(horizontal = 10.dp)
+                            .weight(1f),
                         shape = RoundedCornerShape(size = 16.dp))
                     {
                         Text(text = "Button 2")
@@ -135,10 +150,7 @@ class Volley5Activity : ComponentActivity() {
                             },
                             contentAlignment = Alignment.Center)
                         {
-                            CircularProgressIndicator(
-                                strokeWidth = 2.dp,
-                                color = MaterialTheme.colors.primary
-                            )
+                            CircularProgressIndicator(modifier = Modifier.align(Alignment.Center), strokeWidth = 2.dp, color = MaterialTheme.colors.primary)
                         }
                     }
 

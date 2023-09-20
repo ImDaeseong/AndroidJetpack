@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace 'com.daeseong.screenbrightness_test'
-    compileSdk 33
+    namespace 'com.daeseong.progresscircular_test'
+    compileSdk 32
 
     defaultConfig {
-        applicationId "com.daeseong.screenbrightness_test"
+        applicationId "com.daeseong.progresscircular_test"
         minSdk 23
-        targetSdk 33
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
