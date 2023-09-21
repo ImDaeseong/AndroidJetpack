@@ -13,6 +13,105 @@
         android:theme="@style/Theme.ListView_test"
         tools:targetApi="31">
         <activity
+            android:name=".ListView11Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view11"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView10Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view10"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView9Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view9"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView8Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view8"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView7Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view7"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView6Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view6"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView5Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view5"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView4Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view4"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView3Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view3"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView2Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view2"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListView1Activity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view1"
+            android:theme="@style/Theme.ListView_test">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

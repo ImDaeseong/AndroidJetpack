@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">listView_test</string>
+    <string name="title_activity_list_view1">ListView1Activity</string>
+    <string name="title_activity_list_view2">ListView2Activity</string>
+    <string name="title_activity_list_view3">ListView3Activity</string>
+    <string name="title_activity_list_view4">ListView4Activity</string>
+    <string name="title_activity_list_view5">ListView5Activity</string>
+    <string name="title_activity_list_view6">ListView6Activity</string>
+    <string name="title_activity_list_view7">ListView7Activity</string>
+    <string name="title_activity_list_view8">ListView8Activity</string>
+    <string name="title_activity_list_view9">ListView9Activity</string>
+    <string name="title_activity_list_view10">ListView10Activity</string>
+    <string name="title_activity_list_view11">ListView11Activity</string>
 </resources>
