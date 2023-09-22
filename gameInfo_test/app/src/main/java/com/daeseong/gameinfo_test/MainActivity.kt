@@ -1,6 +1,11 @@
 package com.daeseong.gameinfo_test
 
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
@@ -16,13 +21,15 @@ import androidx.compose.ui.unit.dp
 import com.daeseong.gameinfo_test.ui.theme.GameInfo_testTheme
 
 class MainActivity : ComponentActivity() {
+
+    private val TAG = MainActivity::class.java.simpleName
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             GameInfo_testTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background)
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background)
                 {
                     Buttons()
                 }
@@ -40,8 +47,14 @@ fun Buttons() {
 
         Button(modifier = Modifier.fillMaxWidth(),
             onClick = {
-                //val intent = Intent(context, ListView1Activity::class.java)
-                //context.startActivity(intent)
+
+                Handler(Looper.getMainLooper()).postDelayed({
+                    val gameItems = GameInfo.getGameApp(context)
+                    for (element in gameItems) {
+                        Toast.makeText(context, element.packageName, Toast.LENGTH_SHORT).show()
+                    }
+                }, 100)
+
             })
         {
             Text(text = "button1")
@@ -49,8 +62,13 @@ fun Buttons() {
 
         Button(modifier = Modifier.fillMaxWidth(),
             onClick = {
-                //val intent = Intent(context, ListView2Activity::class.java)
-                //context.startActivity(intent)
+
+                val intent = Intent(context, GameCheckService::class.java)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    context.startForegroundService(intent)
+                } else {
+                    context.startService(intent)
+                }
             })
         {
             Text(text = "button2")
@@ -58,8 +76,9 @@ fun Buttons() {
 
         Button(modifier = Modifier.fillMaxWidth(),
             onClick = {
-                //val intent = Intent(context, ListView3Activity::class.java)
-                //context.startActivity(intent)
+
+                val intent = Intent(context, GameCheckService::class.java)
+                context.stopService(intent)
             })
         {
             Text(text = "button3")
